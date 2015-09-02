@@ -12,7 +12,7 @@ public class ShiftFilter extends Filter {
     private static String[] wordsToIgnore;
 
     public ShiftFilter(javax.swing.JTextArea filter) {
-        wordsToIgnore = filter.getText().split("\\n");
+        wordsToIgnore = filter.getText().toLowerCase().split("\\n");
     }
     
     @Override

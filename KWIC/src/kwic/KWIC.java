@@ -85,7 +85,7 @@ public class KWIC extends javax.swing.JFrame {
 
         input.setColumns(20);
         input.setRows(5);
-        input.setText("test a this is a test\nhahah you got no key\nword is thahha lorem isum");
+        input.setText("");
         jScrollPane2.setViewportView(input);
 
         jButton1.setText("Generate");
