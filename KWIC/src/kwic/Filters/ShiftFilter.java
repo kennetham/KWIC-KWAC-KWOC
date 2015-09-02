@@ -1,4 +1,4 @@
-package Filters;
+package kwic.Filters;
 /*
  * Author: Yeo Quan Yang
  * Matric No.: A0111889W
@@ -9,8 +9,12 @@ import java.util.Arrays;
 
 public class ShiftFilter extends Filter {
     
-    public static final String[] wordsToIgnore = {"is", "the", "of", "and", "as", "a", "after"};
+    private static String[] wordsToIgnore;
 
+    public ShiftFilter(javax.swing.JTextArea filter) {
+        wordsToIgnore = filter.getText().split("\\n");
+    }
+    
     @Override
     protected void transform() throws EOFException {
         String buffer = input.read();

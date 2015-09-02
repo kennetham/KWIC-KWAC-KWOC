@@ -1,4 +1,4 @@
-package Filters;
+package kwic.Filters;
 /*
  * Author: Yeo Quan Yang
  * Matric No.: A0111889W
@@ -8,9 +8,9 @@ import java.util.LinkedList;
 import java.io.EOFException;
 
 public class Pipe {
-    private LinkedList<String> buffer;
+    private final LinkedList<String> buffer;
     private boolean closed;
-    private static int TIME_OUT = 20;
+    private static final int TIME_OUT = 20;
     
     public Pipe() {
         buffer = new LinkedList<String>();
@@ -19,7 +19,6 @@ public class Pipe {
     
     public void write(String input) {
         if (closed) {
-            return;
         } else {
             buffer.add(input);
         }

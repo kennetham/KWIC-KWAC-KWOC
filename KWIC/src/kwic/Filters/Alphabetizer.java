@@ -1,4 +1,4 @@
-package Filters;
+package kwic.Filters;
 
 /*
  * Author: Yeo Quan Yang
@@ -10,7 +10,7 @@ import java.util.concurrent.ConcurrentSkipListSet;
 
 public class Alphabetizer extends Filter {
 
-    private ConcurrentSkipListSet<String> buffer = new ConcurrentSkipListSet<String>();
+    private final ConcurrentSkipListSet<String> buffer = new ConcurrentSkipListSet<String>();
 
     @Override
     public void transform() throws EOFException {

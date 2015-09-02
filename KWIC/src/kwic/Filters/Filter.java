@@ -1,4 +1,4 @@
-package Filters;
+package kwic.Filters;
 /*
  * Author: Yeo Quan Yang
  * Matric No.: A0111889W

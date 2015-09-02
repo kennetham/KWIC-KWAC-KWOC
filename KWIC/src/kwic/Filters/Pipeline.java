@@ -1,8 +1,8 @@
-package Filters;
+package kwic.Filters;
 
 public class Pipeline {
     
-    private Filter[] filters;
+    private final Filter[] filters;
     
     public Pipeline(Filter ... filters) {
         this.filters = filters;

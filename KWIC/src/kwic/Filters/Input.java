@@ -1,4 +1,4 @@
-package Filters;
+package kwic.Filters;
 
 /*
  * Author: Yeo Quan Yang
@@ -6,16 +6,18 @@ package Filters;
  */
 
 import java.io.BufferedReader;
+import java.io.ByteArrayInputStream;
 import java.io.EOFException;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 
 public class Input extends Filter {
 
-    private BufferedReader reader;
+    private final BufferedReader reader;
 
-    public Input() {
-        reader = new BufferedReader(new InputStreamReader(System.in));
+    public Input(javax.swing.JTextArea input) {
+        reader = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(input.getText().getBytes(StandardCharsets.UTF_8))));
     }
 
     @Override
@@ -24,8 +26,8 @@ public class Input extends Filter {
         try {
             read = reader.readLine();
         } catch (IOException e) {
-            e.printStackTrace();
         }
+        
         if (read == null) {
             throw new EOFException();
         } else {

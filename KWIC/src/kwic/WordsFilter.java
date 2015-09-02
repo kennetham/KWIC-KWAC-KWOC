@@ -1,3 +1,5 @@
+package kwic;
+
 import java.util.HashSet;
 
 public class WordsFilter {
