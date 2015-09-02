@@ -33,17 +33,17 @@ public class KWIC extends javax.swing.JFrame {
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-                lineCount.setText(""+output.getLineCount()+" line(s)");
+                lineCount.setText("" + output.getLineCount() + " line(s)");
             }
 
             @Override
             public void insertUpdate(DocumentEvent e) {
-                lineCount.setText(""+output.getLineCount()+" line(s)");
+                lineCount.setText("" + output.getLineCount() + " line(s)");
             }
 
             @Override
             public void changedUpdate(DocumentEvent arg0) {
-                lineCount.setText(""+output.getLineCount()+" line(s)");
+                lineCount.setText("" + output.getLineCount() + " line(s)");
             }
 
         });
@@ -103,7 +103,7 @@ public class KWIC extends javax.swing.JFrame {
 
         jLabel4.setText("Team: Yeo Quan Yang, A0111889W");
 
-        jLabel5.setText("Kenneth Ham Gao Jie, ");
+        jLabel5.setText("Kenneth Ham Gao Jie, A0111875E");
 
         filterInput.setColumns(20);
         filterInput.setRows(5);
@@ -113,7 +113,7 @@ public class KWIC extends javax.swing.JFrame {
         jLabel6.setText("Words to ignore (One per line, no empty lines):");
 
         buttonGroup.add(pattern2);
-        pattern2.setText("Kenneth");
+        pattern2.setText("Repositories");
 
         buttonGroup.add(pipeAndFilter);
         pipeAndFilter.setSelected(true);
