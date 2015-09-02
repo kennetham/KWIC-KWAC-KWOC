@@ -10,7 +10,7 @@ import Filters.ShiftFilter;
  * Matric No.: A0111889W
  */
 
-public class KWIC {
+public class KWICPipeAndFilter {
     public static void main(String[] args ){
         Pipeline p = new Pipeline(
                 new Input(),
