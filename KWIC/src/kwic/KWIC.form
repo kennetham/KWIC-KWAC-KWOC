@@ -131,7 +131,7 @@
           <Properties>
             <Property name="columns" type="int" value="20"/>
             <Property name="rows" type="int" value="5"/>
-            <Property name="text" type="java.lang.String" value="test a this is a test&#xa;hahah you got no key&#xa;word is thahha lorem isum"/>
+            <Property name="text" type="java.lang.String" value="The Day after Tomorrow&#xa;Fast and Furious&#xa;Man of Steel"/>
           </Properties>
         </Component>
       </SubComponents>

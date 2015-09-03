@@ -85,7 +85,7 @@ public class KWIC extends javax.swing.JFrame {
 
         input.setColumns(20);
         input.setRows(5);
-        input.setText("");
+        input.setText("The Day after Tomorrow\nFast and Furious\nMan of Steel");
         jScrollPane2.setViewportView(input);
 
         jButton1.setText("Generate");
