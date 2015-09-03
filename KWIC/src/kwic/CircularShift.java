@@ -80,7 +80,7 @@ public class CircularShift {
             } else if (str.trim().isEmpty()) {
                 continue;
             } else {
-                str_builder.append(Character.toUpperCase(str.charAt(0))).append(str.substring(1));
+                str_builder.append(str.toUpperCase());
             }
             str_builder.append(DELIMITER);
         }
