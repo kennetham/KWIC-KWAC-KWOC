@@ -73,14 +73,15 @@ public class CircularShift {
     private String capitalizeWords(String shift) {
         String[] words = shift.split(DELIMITER);
         StringBuilder str_builder = new StringBuilder();
-
-        for (String str : words) {
-            if (this.words_ignore.containWord(str)) {
-                str_builder.append(str);
-            } else if (str.trim().isEmpty()) {
+        for (int i = 0; i< words.length; i++) {
+            if (this.words_ignore.containWord(words[i])) {
+                str_builder.append(words[i]);
+            } else if (words[i].trim().isEmpty()) {
                 continue;
+            } else if (i==0) {
+                str_builder.append(words[i].toUpperCase());
             } else {
-                str_builder.append(str.toUpperCase());
+                str_builder.append(words[i].toLowerCase());
             }
             str_builder.append(DELIMITER);
         }

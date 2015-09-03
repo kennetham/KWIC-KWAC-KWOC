@@ -3,7 +3,11 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/Users/kennetham/Documents/Tower/KWIC-KWAC-KWOC/KWIC/src/kwic/KWIC.java</file>
+            <file>file:/Users/quanyang/BitBucket/KWIC-KWAC-KWOC/KWIC/src/kwic/KWIC.java</file>
+            <file>file:/Users/quanyang/BitBucket/KWIC-KWAC-KWOC/KWIC/src/kwic/Filters/Filter.java</file>
+            <file>file:/Users/quanyang/BitBucket/KWIC-KWAC-KWOC/KWIC/src/kwic/Alphabetizer.java</file>
+            <file>file:/Users/quanyang/BitBucket/KWIC-KWAC-KWOC/KWIC/src/kwic/Filters/CircularShifter.java</file>
+            <file>file:/Users/quanyang/BitBucket/KWIC-KWAC-KWOC/KWIC/src/kwic/CircularShift.java</file>
         </group>
     </open-files>
 </project-private>
